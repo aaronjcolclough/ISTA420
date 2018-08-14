@@ -1,0 +1,101 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20180807112405
+Username: ORACLE\Aaron
+RunAs User: ORACLE\Aaron
+Configuration Name: 
+Machine: ORACLE (Microsoft Windows NT 10.0.17134.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 8920
+PSVersion: 5.1.17134.165
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17134.165
+BuildVersion: 10.0.17134.165
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\Aaron\Documents\.\Powershell\PowerShell_transcript.ORACLE.BWS5DLnw.20180807112405.txt
+PS D:\> mkdir ISTA220
+
+
+    Directory: D:\
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/7/2018  11:25 AM                ISTA220
+
+
+PS D:\> cd ISTA220
+PS D:\ISTA220> mkdir Exercises
+
+
+    Directory: D:\ISTA220
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/7/2018  11:25 AM                Exercises
+
+
+PS D:\ISTA220> mkdir Homework
+
+
+    Directory: D:\ISTA220
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/7/2018  11:25 AM                Homework
+
+
+PS D:\ISTA220> mkdir Labs
+
+
+    Directory: D:\ISTA220
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/7/2018  11:25 AM                Labs
+
+
+PS D:\ISTA220> notepad++ README.md
+notepad++ : The term 'notepad++' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ notepad++ README.md
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (notepad++:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+notepad++ : The term 'notepad++' is not recognized as the name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At line:1 char:1
++ notepad++ README.md
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (notepad++:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\ISTA220> notepad README.md
+PS D:\ISTA220> dir
+
+
+    Directory: D:\ISTA220
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         8/7/2018  11:25 AM                Exercises
+d-----         8/7/2018  11:25 AM                Homework
+d-----         8/7/2018  11:25 AM                Labs
+-a----         8/7/2018  11:27 AM              8 README.md
+
+
+PS D:\ISTA220> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20180807112807
+**********************

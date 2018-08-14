@@ -1,0 +1,38 @@
+﻿ 
+.headers on
+-- Name: Aaron Colclough
+-- File: family.sql
+-- Date: August 7, 2018
+drop table if exists family;
+create table family(
+id integer,
+name text,
+role text,
+sex integer
+);
+insert into family values (1,"Charles",'parent',1);
+insert into family values (2,"Bonnie",'parent',0);
+insert into family values (3,"Casie",'child',0);
+insert into family values (4,"Jackson",'child',1);
+insert into family values (5,"Max",'pet',1);
+insert into family values (6,"Midnight",'pet',0);
+select* from family;
+id|name|role|sex
+1|Charles|parent|1
+2|Bonnie|parent|0
+3|Casie|child|0
+4|Jackson|child|1
+5|Max|pet|1
+6|Midnight|pet|0
+select name from family where sex = 0;
+name
+Bonnie
+Casie
+Midnight
+select* from family where role like 'pet';
+id|name|role|sex
+5|Max|pet|1
+6|Midnight|pet|0
+select id from family where role like 'child' and sex = 1;
+id
+4
