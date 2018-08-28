@@ -1,0 +1,11 @@
+1. Declarative Languages require you to specify what you want to get and not how to get it.
+2. DDL, DML, DCL
+3. Software. Data.
+4. True, False, Unknown
+5. Primary Keys. Foreign Keys.
+6. Table (Set)
+7. No, Split facName into first and last name columns.
+8. No, the ownerID is not a unique key for the table. Divide the table into multiple tables.
+9. No, City and State can be accessed by querying the Zip. Divide the table into multiple tables.
+10. Instance. Database. Schema. Table.
+11. Declarative Data integrity is enforced as part of a model (table definitions) while procedural data integrity is enforce with code.
