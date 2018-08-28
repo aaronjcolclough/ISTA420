@@ -48,13 +48,14 @@ Runs the subquery for every row of the outer query.
 
 CROSS APPLY and OUTER APPLY.
 
-```SELECT S.shipperid, E.empid
-  FROM Sales.Shippers AS S   
-    CROSS APPLY HR.Employees AS E;```
+    SELECT S.shipperid, E.empid
+    FROM Sales.Shippers AS S   
+      CROSS APPLY HR.Employees AS E;
 
-```SELECT C.custid, A.orderid, A.orderdate
-  FROM Sales.Customers AS C   
-    OUTER APPLY     
-      (SELECT TOP (3) orderid, empid, orderdate, requireddate   FROM Sales.Orders AS O
+    SELECT C.custid, A.orderid, A.orderdate
+    FROM Sales.Customers AS C
+      OUTER APPLY    
+      (SELECT TOP (3) orderid, empid, orderdate, requireddate
+      FROM Sales.Orders AS O
         WHERE O.custid = C.custid      
-        ORDER BY orderdate DESC, orderid DESC) AS A;```
+        ORDER BY orderdate DESC, orderid DESC) AS A;
